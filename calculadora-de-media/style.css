@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(98, 98, 98);
+  color: #FFF;
+  text-align: center;
+}
+
+.logo{
+  
+  width: 60px;
+  margin: 20px;
+}
+
+.notas{
+  margin-top: -10px;
+  min-width: 300px;
+  min-height: 150px;
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.notas input{
+  border-radius: 0.8rem;
+  margin: 10px;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+
+.button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.botao{
+  
+  margin: 20px 10px;
+  background-color: rgb(43, 226, 150);
+  font-size: 0.7rem;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  cursor: pointer;
+}
+
+.botao-limpar{
+  background-color: rgb(255, 148, 60);
+}
+
+.botao:active{
+ opacity: 80%;
+}
+
+.botao h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resultado{
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+
+@media (max-width: 320px)
+{
+  .logo{
+    width: 40px;
+    margin: 20px;
+  }
+  .botao{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+  }
+  .resultado{
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  
+}
